@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGSET</title>
+    <link rel="stylesheet" href="wave.css" />
+    <link rel="icon" type="image/png" href="photo/logo_white.png">
+    <style>
+        /* Add a new style block for additional styling */
+        .header {
+            text-align: center;
+        }
+
+        .header-text {
+            color: #fff;
+            /* Set the text color */
+            font-size: 16px;
+            /* Set the font size */
+            margin-top: 5px;
+            /* Adjust the top margin for spacing */
+        }
+
+        .content {
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Add your waves styling here */
+    </style>
+    <style>
+        .row {
+
+            justify-content: center;
+
+            /* Adjust the spacing between cards */
+        }
+
+        .e-card {
+            width: 48%;
+            /* Установите 48% для того, чтобы карточки занимали по 2 в одну линию */
+            height: 254px;
+            border-radius: 30px;
+            background: #e0e0e0;
+            box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+            margin: 10px;
+            /* Adjust the spacing between cards */
+        }
+
+        @media (max-width: 768px) {
+            .e-card {
+                width: 160px;
+                /* На устройствах с шириной экрана 768 пикселей и меньше, карточки займут всю ширину */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <!--Content before waves-->
+        <div class="inner-header flex">
+            <!-- Replace the text with your logo -->
+            <img src="photo/logo_white.png" alt="Your Logo" width="50px" height="74px">
+        </div>
+
+        <!--Waves Container-->
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+        <!--Waves end-->
+    </div>
+    <!--Header ends-->
+
+    <div class="content flex">
+        <p>my little gallery<br>
+            <br>logset | oljawave<br>
+            <br>click to enter
+        </p>
+    </div>
+
+    <!--Content starts-->
+    <div class="content flex">
+
+
+
+        <div class="row justify-content-center">
+
+            <a href="la.html">
+                <div class="e-card" style=" background-image: url('bg/la.jpg'); background-size: 160px 254px;"></div>
+            </a>
+            <a href="nyc.html">
+                <div class="e-card" style=" background-image: url('bg/NYC.jpg'); background-size: 160px 254px;"></div>
+            </a>
+            <a href="dxb.html">
+                <div class="e-card" style=" background-image: url('bg/dxb.jpg'); background-size: 160px 254px;"></div>
+            </a>
+            <a href="best.html">
+                <div class="e-card" style=" background-image: url('bg/best.jpg'); background-size: 160px 254px;"></div>
+            </a>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <a href="dc.html">
+                <div class="e-card" style=" background-image: url('bg/dc.jpg'); background-size: 160px 254px;"></div>
+            </a>
+            <a href="ast.html">
+                <div class="e-card" style=" background-image: url('bg/ast.jpg'); background-size: 160px 254px;"></div>
+            </a>
+            <a href="ist.html">
+                <div class="e-card" style=" background-image: url('bg/ist.jpg'); background-size: 160px 254px;"></div>
+            </a>
+            <a href="fr.html">
+                <div class="e-card" style=" background-image: url('bg/fr.jpg'); background-size: 160px 254px;"></div>
+            </a>
+
+        </div>
+
+        <div class="row justify-content-center">
+
+            <a href="abu.html">
+                <div class="e-card" style=" background-image: url('bg/abu.jpg'); background-size: 160px 254px;"></div>
+            </a>
+            <a href="ocnj.html">
+                <div class="e-card" style=" background-image: url('bg/ocnj.jpg'); background-size: 160px 254px;"></div>
+            </a>
+            <a href="krg.html">
+                <div class="e-card" style=" background-image: url('bg/krg.jpg'); background-size: 160px 254px;"></div>
+            </a>
+            <a href="vegas.html">
+                <div class="e-card" style=" background-image: url('bg/vegas.jpg'); background-size: 160px 254px;"></div>
+            </a>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="e-card" style=" background-image: url('bg/phila.jpg'); background-size: 160px 254px;"></div>
+
+            <div class="e-card" style=" background-image: url('bg/san.jpg'); background-size: 160px 254px;"></div>
+
+            <div class="e-card" style=" background-image: url('bg/music.jpg'); background-size: 160px 254px;"></div>
+
+            <div class="e-card"></div>
+        </div>
+
+
+    </div>
+    <!--Content ends-->
+</body>
+
+</html>
