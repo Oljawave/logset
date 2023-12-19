@@ -30,139 +30,13 @@
             justify-content: center;
         }
 
-        /* Add your waves styling here */
-    </style>
-    <style>
-        .row {
-
-            justify-content: center;
-
-            /* Adjust the spacing between cards */
-        }
-
-        .e-card {
-            width: 48%;
-            /* Установите 48% для того, чтобы карточки занимали по 2 в одну линию */
-            height: 254px;
-            border-radius: 30px;
-            background: #e0e0e0;
-            box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+        .content img {
+            max-width: 100%;
+            height: auto;
             margin: 10px;
-            /* Adjust the spacing between cards */
-        }
-
-        .btn-23,
-        .btn-23 *,
-        .btn-23 :after,
-        .btn-23 :before,
-        .btn-23:after,
-        .btn-23:before {
-            border: 0 solid;
-            box-sizing: border-box;
-        }
-
-        .btn-23 {
-            -webkit-tap-highlight-color: transparent;
-            -webkit-appearance: button;
-            background-color: #000;
-            background-image: none;
-            color: #fff;
-            cursor: pointer;
-            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-                Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
-                Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-            font-size: 100%;
-            font-weight: 900;
-            line-height: 1.5;
-            margin: 0;
-            -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
-            padding: 0;
-            text-transform: uppercase;
-        }
-
-        .btn-23:disabled {
-            cursor: default;
-        }
-
-        .btn-23:-moz-focusring {
-            outline: auto;
-        }
-
-        .btn-23 svg {
-            display: block;
-            vertical-align: middle;
-        }
-
-        .btn-23 [hidden] {
-            display: none;
-        }
-
-        .btn-23 {
-            border-radius: 99rem;
-            border-width: 2px;
-            overflow: hidden;
-            padding: 0.8rem 3rem;
-            position: relative;
-        }
-
-        .btn-23 span {
-            display: grid;
-            inset: 0;
-            place-items: center;
-            position: absolute;
-            transition: opacity 0.2s ease;
-        }
-
-        .btn-23 .marquee {
-            --spacing: 5em;
-            --start: 0em;
-            --end: 5em;
-            -webkit-animation: marquee 1s linear infinite;
-            animation: marquee 1s linear infinite;
-            -webkit-animation-play-state: paused;
-            animation-play-state: paused;
-            opacity: 0;
-            position: relative;
-            text-shadow: #fff var(--spacing) 0, #fff calc(var(--spacing) * -1) 0,
-                #fff calc(var(--spacing) * -2) 0;
-        }
-
-        .btn-23:hover .marquee {
-            -webkit-animation-play-state: running;
-            animation-play-state: running;
-            opacity: 1;
-        }
-
-        .btn-23:hover .text {
-            opacity: 0;
-        }
-
-        @-webkit-keyframes marquee {
-            0% {
-                transform: translateX(var(--start));
-            }
-
-            to {
-                transform: translateX(var(--end));
-            }
-        }
-
-        @keyframes marquee {
-            0% {
-                transform: translateX(var(--start));
-            }
-
-            to {
-                transform: translateX(var(--end));
-            }
-        }
-
-
-        @media (max-width: 768px) {
-            .e-card {
-                width: 160px;
-                /* На устройствах с шириной экрана 768 пикселей и меньше, карточки займут всю ширину */
-            }
+            /* Adjust the margin between images */
+            border-radius: 8px;
+            /* Optional: Add rounded corners to images */
         }
     </style>
 </head>
@@ -171,8 +45,7 @@
     <div class="header">
         <!--Content before waves-->
         <div class="inner-header flex">
-            <!-- Replace the text with your logo -->
-            <img src="photo/logo_white.png" alt="Your Logo" width="50px" height="74px">
+            <h1>FRIENDS</h1>
         </div>
 
         <!--Waves Container-->
@@ -196,91 +69,77 @@
     <!--Header ends-->
 
     <div class="content flex">
-        <p>my little gallery<br>
-            <br>logset | oljawave<br>
-            <br>click to enter
+        <p>it turns out I have friends<br>
+            <br>ILYA
         </p>
     </div>
 
-    <!--Content starts-->
+
     <div class="content flex">
 
-
-
-        <div class="row justify-content-center">
-
-            <a href="la.html">
-                <div class="e-card" style=" background-image: url('bg/la.jpg'); background-size: 160px 254px;"></div>
-            </a>
-            <a href="nyc.html">
-                <div class="e-card" style=" background-image: url('bg/NYC.jpg'); background-size: 160px 254px;"></div>
-            </a>
-            <a href="dxb.html">
-                <div class="e-card" style=" background-image: url('bg/dxb.jpg'); background-size: 160px 254px;"></div>
-            </a>
-            <a href="best.html">
-                <div class="e-card" style=" background-image: url('bg/best.jpg'); background-size: 160px 254px;"></div>
-            </a>
-        </div>
-
-        <div class="row justify-content-center">
-
-            <a href="dc.html">
-                <div class="e-card" style=" background-image: url('bg/dc.jpg'); background-size: 160px 254px;"></div>
-            </a>
-            <a href="ast.html">
-                <div class="e-card" style=" background-image: url('bg/ast.jpg'); background-size: 160px 254px;"></div>
-            </a>
-            <a href="ist.html">
-                <div class="e-card" style=" background-image: url('bg/ist.jpg'); background-size: 160px 254px;"></div>
-            </a>
-            <a href="fr.html">
-                <div class="e-card" style=" background-image: url('bg/fr.jpg'); background-size: 160px 254px;"></div>
-            </a>
-
-        </div>
-
-        <div class="row justify-content-center">
-
-            <a href="abu.html">
-                <div class="e-card" style=" background-image: url('bg/abu.jpg'); background-size: 160px 254px;"></div>
-            </a>
-            <a href="ocnj.html">
-                <div class="e-card" style=" background-image: url('bg/ocnj.jpg'); background-size: 160px 254px;"></div>
-            </a>
-            <a href="krg.html">
-                <div class="e-card" style=" background-image: url('bg/krg.jpg'); background-size: 160px 254px;"></div>
-            </a>
-            <a href="vegas.html">
-                <div class="e-card" style=" background-image: url('bg/vegas.jpg'); background-size: 160px 254px;"></div>
-            </a>
-        </div>
-
-        <div class="row justify-content-center">
-
-            <a href="phila.html">
-                <div class="e-card" style=" background-image: url('bg/phila.jpg'); background-size: 160px 254px;"></div>
-            </a>
-            <a href="san.html">
-                <div class="e-card" style=" background-image: url('bg/san.jpg'); background-size: 160px 254px;"></div>
-            </a>
-            <a href="music.html">
-                <div class="e-card" style=" background-image: url('bg/music.jpg'); background-size: 160px 254px;"></div>
-            </a>
-            <div class="e-card"></div>
-        </div>
+        <img src="photo/picture22.JPG" alt="">
+        <img src="photo/picture50.JPG" alt="">
+        <img src="photo/picture52.JPG" alt="">
+        <img src="fr/fr-2.jpg" alt="">
+        <img src="fr/fr-3.jpg" alt="">
+        <img src="fr/fr-4.jpg" alt="">
+        <img src="fr/fr-5.jpg" alt="">
+        <img src="fr/fr-6.jpg" alt="">
+        <img src="fr/fr-7.jpg" alt="">
+        <img src="fr/fr-8.jpg" alt="">
+        <img src="fr/fr-9.jpg" alt="">
+        <img src="fr/fr-45.JPG" alt="">
+        <img src="fr/fr-46.JPG" alt="">
+        <img src="fr/fr-47.JPG" alt="">
+        <img src="fr/fr-10.jpg" alt="" loading="lazy">
+        <img src="fr/fr-11.jpg" alt="" loading="lazy">
+        <img src="fr/fr-12.jpg" alt="" loading="lazy">
+        <img src="fr/fr-13.jpg" alt="" loading="lazy">
+        <img src="fr/fr-14.jpg" alt="" loading="lazy">
+        <img src="fr/fr-15.jpg" alt="" loading="lazy">
+        <img src="fr/fr-16.jpg" alt="" loading="lazy">
+        <img src="fr/fr-17.jpg" alt="" loading="lazy">
+        <img src="fr/fr-18.jpg" alt="" loading="lazy">
+        <img src="fr/fr-19.jpg" alt="" loading="lazy">
+        <img src="fr/fr-20.jpg" alt="" loading="lazy">
+        <img src="fr/fr-21.jpg" alt="" loading="lazy">
+        <img src="fr/fr-22.jpg" alt="" loading="lazy">
+        <img src="fr/fr-23.jpg" alt="" loading="lazy">
+        <img src="fr/fr-24.jpg" alt="" loading="lazy">
+        <img src="fr/fr-25.jpg" alt="" loading="lazy">
+        <img src="fr/fr-26.jpg" alt="" loading="lazy">
+        <img src="fr/fr-27.jpg" alt="" loading="lazy">
+        <img src="fr/fr-28.jpg" alt="" loading="lazy">
+        <img src="fr/fr-29.jpg" alt="" loading="lazy">
+        <img src="fr/fr-30.jpg" alt="" loading="lazy">
+        <img src="fr/fr-31.jpg" alt="" loading="lazy">
+        <img src="fr/fr-32.jpg" alt="" loading="lazy">
+        <img src="fr/fr-33.jpg" alt="" loading="lazy">
+        <img src="fr/fr-34.jpg" alt="" loading="lazy">
+        <img src="fr/fr-35.jpg" alt="" loading="lazy">
+        <img src="fr/fr-36.jpg" alt="" loading="lazy">
+        <img src="fr/fr-37.jpg" alt="" loading="lazy">
+        <img src="fr/fr-38.JPG" alt="" loading="lazy">
+        <img src="fr/fr-39.JPG" alt="" loading="lazy">
+        <img src="fr/fr-40.JPG" alt="" loading="lazy">
+        <img src="fr/fr-41.JPG" alt="" loading="lazy">
+        <img src="fr/fr-42.JPG" alt="" loading="lazy">
+        <img src="fr/fr-43.JPG" alt="" loading="lazy">
+        <img src="fr/fr-44.JPG" alt="" loading="lazy">
+        <img src="fr/fr-45.JPG" alt="" loading="lazy">
 
 
 
-        <div class="content flex">
-            <p>made in memory of a Canon 250D camera<br>
-                <br>most likely I will sell it<br>
-                <br>but it is so dear to me
-            </p>
-        </div>
+
+        <a href="index.html" class="btn-23">
+            <span class="text">back</span>
+            <span aria-hidden="" class="marquee">back</span>
+        </a>
 
     </div>
-    <!--Content ends-->
+
+
+
 </body>
 
 </html>
