@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGSET</title>
+    <link rel="stylesheet" href="wave.css" />
+    <link rel="icon" type="image/png" href="photo/logo_white.png">
+    <style>
+        /* Add a new style block for additional styling */
+        .header {
+            text-align: center;
+        }
+
+        .header-text {
+            color: #fff;
+            /* Set the text color */
+            font-size: 16px;
+            /* Set the font size */
+            margin-top: 5px;
+            /* Adjust the top margin for spacing */
+        }
+
+        .content {
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Add your waves styling here */
+    </style>
+    <style>
+        .row {
+
+            justify-content: center;
+
+            /* Adjust the spacing between cards */
+        }
+
+        .e-card {
+            width: 48%;
+            /* Установите 48% для того, чтобы карточки занимали по 2 в одну линию */
+            height: 254px;
+            border-radius: 30px;
+            background: #e0e0e0;
+            box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+            margin: 10px;
+            /* Adjust the spacing between cards */
+        }
+
+        .btn-23,
+        .btn-23 *,
+        .btn-23 :after,
+        .btn-23 :before,
+        .btn-23:after,
+        .btn-23:before {
+            border: 0 solid;
+            box-sizing: border-box;
+        }
+
+        .btn-23 {
+            -webkit-tap-highlight-color: transparent;
+            -webkit-appearance: button;
+            background-color: #000;
+            background-image: none;
+            color: #fff;
+            cursor: pointer;
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+                Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+            font-size: 100%;
+            font-weight: 900;
+            line-height: 1.5;
+            margin: 0;
+            -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+            padding: 0;
+            text-transform: uppercase;
+        }
+
+        .btn-23:disabled {
+            cursor: default;
+        }
+
+        .btn-23:-moz-focusring {
+            outline: auto;
+        }
+
+        .btn-23 svg {
+            display: block;
+            vertical-align: middle;
+        }
+
+        .btn-23 [hidden] {
+            display: none;
+        }
+
+        .btn-23 {
+            border-radius: 99rem;
+            border-width: 2px;
+            overflow: hidden;
+            padding: 0.8rem 3rem;
+            position: relative;
+        }
+
+        .btn-23 span {
+            display: grid;
+            inset: 0;
+            place-items: center;
+            position: absolute;
+            transition: opacity 0.2s ease;
+        }
+
+        .btn-23 .marquee {
+            --spacing: 5em;
+            --start: 0em;
+            --end: 5em;
+            -webkit-animation: marquee 1s linear infinite;
+            animation: marquee 1s linear infinite;
+            -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+            opacity: 0;
+            position: relative;
+            text-shadow: #fff var(--spacing) 0, #fff calc(var(--spacing) * -1) 0,
+                #fff calc(var(--spacing) * -2) 0;
+        }
+
+        .btn-23:hover .marquee {
+            -webkit-animation-play-state: running;
+            animation-play-state: running;
+            opacity: 1;
+        }
+
+        .btn-23:hover .text {
+            opacity: 0;
+        }
+
+        @-webkit-keyframes marquee {
+            0% {
+                transform: translateX(var(--start));
+            }
+
+            to {
+                transform: translateX(var(--end));
+            }
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(var(--start));
+            }
+
+            to {
+                transform: translateX(var(--end));
+            }
+        }
+
+
+        @media (max-width: 768px) {
+            .e-card {
+                width: 160px;
+                /* На устройствах с шириной экрана 768 пикселей и меньше, карточки займут всю ширину */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <!--Content before waves-->
+        <div class="inner-header flex">
+            <!-- Replace the text with your logo -->
+            <img src="photo/logo_white.png" alt="Your Logo" width="50px" height="74px">
+        </div>
+
+        <!--Waves Container-->
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+        <!--Waves end-->
+    </div>
+    <!--Header ends-->
+
+    <div class="content flex">
+        <p>movieland<br>
+            <br>logset | oljawave<br>
+            <br>click to enter
+        </p>
+    </div>
+
+    <!--Content starts-->
+    <div class="content flex">
+
+
+
+        <div class="row justify-content-center">
+
+            <a href="movie.html">
+                <div class="e-card" style=" background-image: url('bg/movie.jpg'); background-size: 160px 254px;"></div>
+            </a>
+            <a href="actors.html">
+                <div class="e-card" style=" background-image: url('bg/actors.jpg'); background-size: 160px 254px;">
+                </div>
+            </a>
+            <a href="actresses.html">
+                <div class="e-card" style=" background-image: url('bg/actresses.jpg'); background-size: 160px 254px;">
+                </div>
+            </a>
+            <a href="directors.html">
+                <div class="e-card" style=" background-image: url('bg/directors.jpg'); background-size: 160px 254px;">
+                </div>
+            </a>
+        </div>
+
+    </div>
+    <!--Content ends-->
+</body>
+
+</html>
